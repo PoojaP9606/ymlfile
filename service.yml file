@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: calci1-service
+spec:
+  selector:
+    app.kubernetes.io/name: calci
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
